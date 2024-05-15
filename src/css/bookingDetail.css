@@ -1,0 +1,26 @@
+bd-container {
+  height: 100%;
+  width: 80%;
+  /* background-color: cadetblue; */
+  border: 3px solid red;
+  display: grid;
+  justify-content: center;
+  margin-left: 20%;
+
+};
+
+
+.booking-user-card {
+  display: flex;
+  margin-bottom: 2%;
+  -webkit-box-shadow: 0 -0.5px 4.5px 0.5px #dddddd;
+  -moz-box-shadow: 0 -0.5px 4.5px 0.5px #dddddd;
+  box-shadow: 0 -0.5px 4.5px 0.5px #dddddd;
+  background-color: #ffffff
+
+};
+
+
+
+
+

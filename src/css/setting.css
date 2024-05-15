@@ -1,0 +1,13 @@
+setting-container{
+    height: fit-content;
+    width: fit-content;
+    background-color: cadetblue;
+  display: grid;  
+  margin-left: 20%;
+};
+
+setting-main{
+    height: auto;
+    width: auto;
+    background-color: aqua;
+};

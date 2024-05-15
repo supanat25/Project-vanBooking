@@ -1,0 +1,145 @@
+.login-container {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  height: 100vh;
+  background: #f5f5f5;
+
+
+}
+
+.login-form {
+  position: relative; /* เพิ่มบรรทัดนี้ */
+  -webkit-box-shadow: 3px 3px 5px 3px #c3c3c3;
+  -moz-box-shadow: 3px 3px 5px 3px #c3c3c3;
+  box-shadow: 3px 3px 5px 3px #c3c3c3;
+  margin: 10%;
+  padding: 10%;
+  background-color: rgb(255, 255, 255);
+  border-radius:5%;
+
+
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login-button-group{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+
+.alert-top {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;/* ปรับขนาดตามต้องการ */
+  z-index: 1000; /* ให้แสดงทับ content อื่น */
+  text-align: center;
+}
+
+.login-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-img-info{
+  width: 90%;
+  height: 90%;
+  /* border: 3px solid rgb(0, 0, 0); */
+  -webkit-box-shadow: 0 0 22px -7.5px #0c0c0b;
+  -moz-box-shadow: 0 0 22px -7.5px #0c0c0b;
+  box-shadow: 0 0 22px -7.5px #0c0c0b;
+  overflow: hidden;
+
+  
+}
+
+.login-img-info img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    height: 95vh;
+    max-width: 100%;
+    background: #f5f5f5;
+    align-content: center;
+}
+  .login-img{
+    display: none;
+  }
+
+
+
+}
+
+
+
+
+/* .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #606c88;
+    background: -webkit-linear-gradient(0deg, #606c88 0%, #3f4c6b 100%);
+    background: linear-gradient(0deg, #606c88 0%, #3f4c6b 100%);
+  }
+  
+  .login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background: rgba(255,255,255,0.65);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.325);
+
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .login-button-group{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  .alert-top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000; 
+    text-align: center;
+  } */
+  
+  
+  

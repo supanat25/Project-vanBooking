@@ -1,0 +1,16 @@
+schedule-container{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+  display: grid;
+  
+  align-items: center;
+  margin-left: 20%;
+};
+
+schedule-main{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    background-color: aqua;
+};

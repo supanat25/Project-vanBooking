@@ -1,0 +1,269 @@
+/* เซตขนาดและขอบของ Navbar */
+navbar {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 92%;
+  position: fixed;
+  top: 8%;
+  left: 0;
+  background-color: #206A5D;
+  /* สีพื้นหลังของ Navbar */
+  padding-top: 20px;
+  /* ระยะห่างด้านบนของ Navbar */
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+  /* เงาด้านขวาของ Navbar */
+  z-index: 998;
+  /* สร้างลำดับความสำคัญให้ Navbar แสดงเหนือส่วนอื่น */
+  float: left;
+
+
+}
+
+/* profile {
+  display: grid;
+  height: 30%;
+  width: 100%;
+  background-color: #435334;
+
+} */
+
+/* pic {
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border-radius: 10%;
+  border: 3px solid red;
+} */
+
+/* เซตสไตล์ของลิงค์ใน Navbar */
+a {
+  /* display: block; */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+}
+
+/* สไตล์ลิงค์เมื่อ hover */
+navbar a:hover {
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  background-color: #effad386;
+  color: #206A5D;
+
+
+
+}
+
+
+.nav-side-item.active {
+  background-color: #EFFAD3;
+  color: #206A5D;
+  -webkit-box-shadow: 0 0 22px -7.5px #0c0c0b;
+  -moz-box-shadow: 0 0 22px -7.5px #0c0c0b;
+  box-shadow: 0 0 22px -7.5px #0c0c0b;
+  /* border-radius: 3% 3% 3% 3% / 10% 11% 11% 11%; */
+}
+
+.nav-side-item-logout:hover {
+  background-color: #ff000080;
+  color: white;
+
+}
+
+
+FontAwesomeIcon {
+  display: flex;
+}
+
+
+
+.nav-side-item {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  padding-left: 10%;
+  margin-inline: 2%;
+  border-radius: 3% 3% 3% 3% / 10% 11% 11% 11%;
+
+}
+
+.nav-side-item-logout {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  padding-left: 10%;
+  margin-inline: 2%;
+  border-radius: 3% 3% 3% 3% / 10% 11% 11% 11%;
+
+
+}
+
+
+
+
+/* สไตล์ของโลโก้หรือตัวอักษรหัวข้อ Navbar */
+navbar h1 {
+  color: white;
+  /* สีข้อความ */
+  text-align: center;
+  margin-top: 0;
+}
+
+/* สไตล์ของเนื้อหาหลักที่จะแสดงข้างขวาของ Navbar */
+.main-content {
+  margin-left: 250px;
+  /* ให้เนื้อหาหลักห่างจากซ้ายเท่ากับขนาดของ Navbar */
+  padding: 20px;
+  /* ระยะห่างของเนื้อหาหลัก */
+}
+
+.logout {
+  /* height: auto;
+  width: auto; */
+  margin-top: auto;
+
+}
+
+
+.line {
+  width: 85%;
+  height: 0.1%;
+  align-self: center;
+  background-color: gray;
+  margin: 2%;
+}
+
+.nav-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 4%;
+  gap: 4%;
+
+}
+
+
+.nav-name {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+.nav-role-nonuser {
+  color: aqua;
+
+}
+
+
+
+/* navtop */
+
+.container-navtop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 900;
+  -webkit-box-shadow: 0 19px 16.5px -15px #dbdbdb;
+  -moz-box-shadow: 0 19px 16.5px -15px #dbdbdb;
+  box-shadow: 0 19px 16.5px -15px #dbdbdb;
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 3%;
+  padding-inline-end: 2%;
+}
+
+
+.nav-top-item-logout :hover {
+  color: red;
+}
+
+.nav-top-text {
+  margin: 0;
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+  navbar {
+
+
+    padding-top: 0;
+  }
+
+  .nav-header {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .nav-name {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1vh;
+  }
+
+  .nav-text-name {
+    font-size: 1.5vh;
+  }
+
+  .nav-role-nonuser {
+    margin-top: 5px;
+  }
+
+  .line {}
+
+  .nav-list {
+    display: block;
+  }
+
+
+
+  .nav-side-item {
+    display: flex;
+    left: auto;
+    justify-content: center;
+  }
+
+  /* nav top */
+  .container-navtop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 900;
+    -webkit-box-shadow: 0 19px 16.5px -15px #dbdbdb;
+    -moz-box-shadow: 0 19px 16.5px -15px #dbdbdb;
+    box-shadow: 0 19px 16.5px -15px #dbdbdb;
+  }
+
+  .nav-top-text {
+    margin: 0;
+    font-size: 3vw;
+  }
+
+  .nav-item-text {
+    display: none;
+  }
+}
+
+/* Hide nav-item-text when it reaches an appropriate size */

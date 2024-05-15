@@ -1,0 +1,54 @@
+/* src/Login.css */
+
+.App {
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+h2 {
+  color: #333;
+}
+
+form {
+  margin: 20px auto;
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+} */
+
+p {
+  margin-top: 20px;
+}
+
+p a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
