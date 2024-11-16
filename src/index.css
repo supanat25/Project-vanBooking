@@ -19,23 +19,22 @@ code {
 }
 
 
-
 ::-webkit-scrollbar {
-  width: 5px; /* กำหนดความกว้างของ scrollbar */
+  width: 5px; 
 }
 
 /* สไตล์ของแถบ scrollbar */
 ::-webkit-scrollbar-track {
-  background: #CEDEBD; /* สีพื้นหลังของ scrollbar */
+  background: #CEDEBD; 
 }
 
 /* สไตล์ของ handle (ส่วนที่เราสามารถลากและคลิก) ของ scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: #435334; /* สีของ handle */
+  background: #435334; 
 }
 
 /* เมื่อ hover ที่ handle */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* สีของ handle เมื่อ hover */
+  background: #555; 
 }
 
